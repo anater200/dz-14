@@ -18,7 +18,6 @@ public class HoodiesSweatshirtsPage extends Page {
         getElement(xsSize).click();
         getElement(grayColor).click();
         getElement(addToCart).click();
-        Thread.sleep(6000);
         return new HomePage(driver);
     }
 }
