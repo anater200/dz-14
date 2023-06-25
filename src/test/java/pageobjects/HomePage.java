@@ -24,7 +24,7 @@ public class HomePage extends Page{
     @Step("User chooses Sale category")
     public CartPage openCart() throws InterruptedException {
         getElement(cartIcon).click();
-        Thread.sleep(2000);
+        waitTillAppears(viewAndEditCart, 5);
         getElement(viewAndEditCart, 8).click();
         return new CartPage(driver);
     }
